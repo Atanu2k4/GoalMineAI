@@ -20,7 +20,7 @@ def get_upcoming_events():
 
     # Fetch events from the primary calendar
     events_result = service.events().list(
-        calendarId='primary', timeMin=now,
+        calendarId="4166e51bea32a731aa853a6a2d5b1580b3a2f3b9679155f4c86312721ea8dcf2@group.calendar.google.com", timeMin=now,
         maxResults=10, singleEvents=True,
         orderBy='startTime').execute()
 
